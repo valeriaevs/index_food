@@ -15,6 +15,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .search-form {
@@ -82,4 +83,168 @@ body {
   color: #000000;
   background: #ffaf19;
   border-radius: 50%;
+}
+
+/**/
+
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  border-radius: 20px;
+  overflow: hidden; /* если что-то вываливается за пределы - прятать */
+  min-height: 400px;
+}
+
+.slide-text-light {
+  background-color: grey;
+  color: #fff;
+}
+
+.slide-content {
+  position: relative; /* чтоюы контент не перекрывался overlay -ем */
+  max-width: 400px;
+}
+
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  background: #f47322;
+  color: #fff;
+}
+
+.button-default {
+  background-color: #fff;
+  font-size: 16px;
+  color: #5f5f61;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  border-radius: 25px;
+}
+
+.slide-summer {
+  background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  max-width: 570px;
+  width: 100%;
+  min-height: 380px;
+  padding: 32px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-header,
+.card-footer {
+  z-index: 2;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+  color: #fff;
+}
+
+.card-title {
+  margin-top: 4px;
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+}
+
+.card-description {
+  max-width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.card-price {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+}
+
+.card-delivery {
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.sweet-basket {
+  background-image: url(../img/sweet_basket.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minimum {
+  background-image: url(../img/minimum.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
