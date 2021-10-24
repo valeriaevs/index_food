@@ -170,6 +170,7 @@ body {
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin: -20px; /* чтобы оставить отступ между карточками только внутри блока */
 }
 
 .card {
@@ -177,8 +178,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  flex: 50%;
+  margin: 20px;
   max-width: 570px;
-  width: 100%;
   min-height: 380px;
   padding: 32px;
   border-radius: 20px;
@@ -247,4 +249,293 @@ body {
   background-image: url(../img/minimum.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+
+.delivery-week {
+  padding: 100px 0;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  position: relative;
+  margin: 15px;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-tag {
+  position: absolute;
+  z-index: 7;
+  top: 16px;
+  left: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  border-radius: 30px;
+}
+
+.tag-light-text {
+  color: #fff;
+}
+
+.tag-health {
+  background: #d0fd89;
+}
+
+.tag-vegetable {
+  background: #aebc41;
+}
+
+.tag-meat {
+  background: #b86b78;
+}
+
+.tag-bird {
+  background: #d68334;
+}
+
+.tag-fish {
+  background: #cd6255;
+}
+
+.tag-kids {
+  background: #fffdbf;
+}
+
+.tag-parents {
+  background: #f6fdc8;
+}
+
+.tag-holiday {
+  background: #fef7fe;
+}
+
+.section-gray {
+  background: #f6f6f6;
+}
+
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs-link {
+  margin-right: 58px;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #49494f;
+}
+
+.tabs-link.active {
+  color: #f37321;
+}
+
+.tabs-content {
+  display: flex;
+  margin: -18.5px;
+}
+
+.tabs-card {
+  margin: 18.5px;
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+}
+
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+.button-outline {
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  background-color: transparent;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  cursor: pointer;
+}
+
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+
+.benefits {
+  padding: 100px 0 200px 0;
+}
+
+.benefits-content {
+  display: flex;
+  margin: -18.5px;
+}
+
+.benefits-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18.5px;
+  max-width: 270px;
+  min-height: 296px;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.benefits-image {
+  height: 60px;
+  margin-bottom: 34px;
+}
+
+.benefits-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-title {
+  max-width: 188px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+
+.benefits-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #49494f;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.footer-link {
+  margin-right: 50px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.social-link {
+  display: block;
+  margin-left: 20px;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #c4c4c4;
+  border-radius: 100%;
+}
+
+.telegram {
+  background-image: url(../img/telegram-icon.svg);
+}
+
+.vk {
+  background-image: url(../img/vk-icon.svg);
+}
+
+.instagram {
+  background-image: url(../img/instagram-icon.svg);
 }
