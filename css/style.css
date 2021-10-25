@@ -87,6 +87,24 @@ body {
 
 /**/
 
+.slider {
+  position: relative;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 9;
+  right: 46px;
+  bottom: 40px;
+  width: 100px;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
 .slide {
   position: relative;
   display: flex;
@@ -104,7 +122,7 @@ body {
 
 .slide-content {
   position: relative; /* чтоюы контент не перекрывался overlay -ем */
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .slide-title {
@@ -145,6 +163,18 @@ body {
 
 .slide-summer {
   background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-autumn {
+  background-image: url(../img/autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vitamin {
+  background-image: url(../img/vitamin.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -538,4 +568,166 @@ body {
 
 .instagram {
   background-image: url(../img/instagram-icon.svg);
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 37px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .slide {
+    padding: 70px;
+  }
+
+  .delivery-card {
+    width: calc(50% - 37px);
+  }
+
+  .benefits-content {
+    flex-wrap: wrap;
+  }
+
+  .benefits-card {
+    max-width: 50%;
+    width: calc(50% - 37px);
+  }
+
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .shopping-cart {
+    margin-right: 30px;
+  }
+
+  .search-form {
+    order: 5;
+    margin: 15px 0;
+  }
+
+  .promo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .slide {
+    padding: 60px;
+  }
+
+  .button {
+    padding: 8px 15px;
+  }
+
+  .slide-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .slide-text {
+    font-size: 14px;
+  }
+
+  .delivery-card {
+    width: 100%;
+  }
+
+  .tabs-card {
+    max-width: 100%;
+  }
+
+  .benefits-cards {
+    justify-content: center;
+  }
+
+  .benefits-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .social-links {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .button-center {
+    width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .shopping-cart {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .logo-image {
+    width: 100px;
+  }
+
+  .slide-text {
+    display: none;
+  }
+
+  .slide-title {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
 }

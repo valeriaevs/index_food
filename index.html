@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> <!-- библиотека слайдера -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,15 +33,60 @@
   </header>
   <main class="main">
     <div class="slider container">
-      <div class="slide slide-text-light slide-summer">
-        <div class="slide-content">
-          <h2 class="slide-title">Неделя летних овощей</h2>
-          <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
-          <a href="#" class="button button-primary">Заказать со скидкой</a>
+      
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide slide-text-light slide-autumn">
+            <div class="slide-content">
+              <h2 class="slide-title">Неделя осенних овощей</h2>
+              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
+              <a href="#" class="button button-primary">Заказать со скидкой</a>
+            </div>
+          </div>
+          <!-- /.slide -->
+        </div>
+        <div class="swiper-slide">
+          <div class="slide slide-text-light slide-summer">
+            <div class="slide-content">
+              <h2 class="slide-title">Неделя летних овощей</h2>
+              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
+              <a href="#" class="button button-primary">Заказать со скидкой</a>
+            </div>
+          </div>
+          <!-- /.slide -->
+        </div>
+        <div class="swiper-slide">
+          <div class="slide slide-text-light slide-vitamin">
+            <div class="slide-content">
+              <h2 class="slide-title">Витаминная неделя</h2>
+              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
+              <a href="#" class="button button-primary">Заказать со скидкой</a>
+            </div>
+          </div>
+          <!-- /.slide -->
+        </div>
+        
+      </div>
+    
+      <div class="slider-buttons">
+        <!-- If we need navigation buttons -->
+        <div class="slider-button slider-button-prev">
+          <img src="img/arrow-left.svg" alt="arrow">
+        </div>
+        <div class="slider-button slider-button-next">
+          <img src="img/arrow-right.svg" alt="arrow">
         </div>
       </div>
-      <!-- /.slide -->
+      <!-- /.slider-buttons -->
+    
     </div>
+
     <div class="container">
       <div class="promo">
       <section class="card card-text-light sweet-basket">
@@ -249,5 +295,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
