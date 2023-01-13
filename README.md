@@ -17,4 +17,4 @@
 - Normalize.css
 - SVG Sprites
 
-## Ссылка на сайт проекта: https://valeria-7.github.io/index_food/
+## Ссылка на сайт проекта: https://valeriaevs.github.io/index_food/
